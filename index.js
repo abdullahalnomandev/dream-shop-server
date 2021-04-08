@@ -78,34 +78,8 @@ client.connect(err => {
 });
 
 
+
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`)
 })
 
-
-
-
-
-
-
-
-
-// const express = require('express')
-// const app = express()
-// const cors=require('cors');
-// const ObjectID =require('mongodb').ObjectID;
-// require('dotenv').config()
-
-// const port = process.env.PORT || 5000;
-// const user =process.env.DB_USER
-// const password=process.env.BD_PASS
-// const name=process.env.DB_NAME
-// const MongoClient = require('mongodb').MongoClient;
-// const uri = `mongodb+srv://${user}:${password}@cluster0.ez7qy.mongodb.net/${name}?retryWrites=true&w=majority`;
-// const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
-
-// app.use(cors());
-// app.use(express.json())
-// app.get('/', (req, res) => {
-//   res.send('Hello World!')
-// })
